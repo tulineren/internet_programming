@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Form Etiketleri</title>
+    </head>
+    <body>
+         <form action="" method="post" enctype="multipart/form-data">
+             <label for="kul_adi">Kullanıcı Adı</label>
+             <input placeholder="Kullanıcı adınızı yazınız" id="kul_adi" type="text" required> <br><br> <!-- required: Kullanıcı, formu göndermeden önce bu alanı doldurmak zorundadır. -->
+             <label for="sifre">Şifre</label>
+             <input placeholder="Şifrenizi giriniz" id="sifre" type="password" required maxlength="8"> <br><br> <!-- maxlength="": Maksimum karakter sayısını belirler. -->
+             <label for="e_posta">E-mail</label>
+             <input id="e_posta" type="email" value="ornek@gmail.com" readonly> <br><br> <!-- readonly değiştirilemez olduğunu gösteriyor. -->
+             <label for="dosya">Dosya Seç</label>
+             <input id="dosya" type="file" accept="image/*" name="dosya[]" multiple> <!-- Eğer form içerisinde file tipinde bir input varsa enctype niteliği belirtilmelidir. --> <br><br>
+             <!-- accept ile seçilmek istenen dosyayı özelleştirebiliyoruz.Bu örnekte sadece resim dosyasından seçim yapabiliriz. -->
+             <label>
+                 <input type="radio" name="cinsiyet" value="erkek">Erkek
+             </label>
+             <label>
+                 <input type="radio" name="cinsiyet" value="kadin" checked>Kadın <!-- checked otomatik olarak seçili geliyor. -->
+             </label> <br><br>
+             <input type="checkbox"> Okudum, onaylıyorum. <br><br>
+             <label>
+                 <input type="checkbox"> Okudum, onaylıyorum. <!-- label içerisine aldığımızda ok yazının üzerine geldiğinde de onaylayabiliyoruz. -->
+             </label><br><br>
+             <input type="hidden" name="test" value="test">
+             <input type="reset" name="Sıfırla">
+             <input type="submit">
+
+             <br><br><br><br>
+             <input type="color"> <br>
+             <input type="date"> <br>
+             <input type="time"> <br>
+             <input type="datetime-local"> <br>
+             <input type="month"> <br>
+             <input type="week"> <br>
+             <input type="number" min="5" max="15"> <br>
+             <input type="range" min="0" max="100" step="5"> <br> <!-- step: Bu örnekte beşer beşer artması isteniyor. -->
+             <input type="search" autofocus> <br>
+             <input type="tel"> <br>
+             <input type="url"> <br>
+         </form>
+    </body>
+</html>

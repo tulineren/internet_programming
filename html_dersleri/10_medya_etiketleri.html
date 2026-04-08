@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Medya Etiketleri(Audio ve Video)</title>
+    </head>
+    <body>
+        <audio controls loop muted>
+            <source src="örnek.mp3" type="audio/mpeg"> Tarayıcınız bu özelliği desteklemiyor.
+        </audio>
+        <!-- loop özelliği, medya dosyasının sona erdikten sonra otomatik olarak tekrar başlatılmasını sağlar. -->
+        <!-- muted özelliği, medya dosyasının sesini kapatır (sessiz modda oynatılır). -->
+        <br>
+        <br>
+    <video width="320" height="240" controls loop muted poster="paranormal.gif">
+        <source src="test.mp4" type="video/mp4"> Tarayıcınız bu özelliği desteklemiyor.
+        <track src="subtitle-en.vtt" kind="subtitles" srclang="en" label="English">
+        <track src="subtitle-.de.vtt" kind="subtitles" srclang="de" label="German">
+    </video>
+    </body>
+</html>
